@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FaceScanner Camera</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+    <h2>FaceScanner Attendance</h2>
+    <p id="message">กำลังเตรียมกล้อง...</p>
+
+    <div class="camera">
+      <video id="v" autoplay playsinline muted></video>
+    </div>
+
+    <button id="openCam">เปิดกล้อง</button>
+    <button id="stopCam">ปิดกล้อง</button>
+
+    <p id="cameraStatus">รอเปิดกล้อง</p>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api@1.7.12/dist/face-api.js"></script>
+  <script src="camera.js"></script>
+</body>
+</html>
 
